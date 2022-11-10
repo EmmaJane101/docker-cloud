@@ -2,10 +2,10 @@ version: "3.7"
 
 services:
   app:
-    image: node:cloud-docker
+    image: docker-cloud
     command: sh -c "yarn install && yarn run dev"
     ports:
-      - 3000:3000
+      - 80:3000
     working_dir: /app
     volumes:
       - ./:/app
